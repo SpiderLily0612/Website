@@ -1,0 +1,19 @@
+
+@media (max-width: 480px) {
+    .left-panel {
+        position: relative;
+        height: 200px;
+    }
+    
+    .logo {
+        position: absolute;
+        left: 158px;
+        top: 52px;
+        z-index: 100;
+    }
+    
+    .logo-svg {
+        width: 120px;
+        height: 55px;
+    }
+}

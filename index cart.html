@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Golden Crust Bakery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500,600,800|Source+Serif+4:700" rel="stylesheet">
+  <link href="styles cart.css" rel="stylesheet" />
+</head>
+<body>
+  <script src="responsive.js"></script>
+  <div class="container">
+    <div class="main-content">
+
+      <div class="logo" style="clear: both;">
+        <a href="index home.html">
+          <img src="public cart/logo.svg" alt="Golden Crust Bakery Logo" style="max-width: 150px; height: auto;" />
+        </a>
+       </div>
+
+  
+      <div class="cart-header">
+        <div class="header-item">PRODUCT</div>
+        <div class="header-item">PRICE</div>
+        <div class="header-item">QTY</div>
+        <div class="header-item">TOTAL</div>
+      </div>
+
+
+      <div class="product-item" data-total="100">
+      <div class="cart-item" data-item-id="BC12341" draggable="true">
+        <div class="product-info">
+          <img class="product-image" alt="Fudgy Brownies" src="public cart/chocolate-brownies-white-plate.png" />
+          <div class="product-name">Fudgy Brownies</div>
+          <div class="product-code">#BC12341</div>
+        </div>
+        <div class="price">PHP 50</div>
+        <div class="quantity">
+          <button class="quantity-btn quantity-decrease">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <span class="quantity-number">2</span>
+          <button class="quantity-btn quantity-increase">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="total">PHP 100</div>
+      </div>
+
+      <div class="cart-item" data-item-id="BC12234" draggable="true">
+        <div class="product-info">
+          <img class="product-image" alt="Crossaint" src="public cart/butter-croissant-1.png" />
+          <div class="product-name">Crossaint</div>
+          <div class="product-code">#BC12234</div>
+        </div>
+        <div class="price">PHP 75</div>
+        <div class="quantity">
+          <button class="quantity-btn quantity-decrease">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <span class="quantity-number">1</span>
+          <button class="quantity-btn quantity-increase">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="total">PHP 75</div>
+      </div>
+
+      <div class="cart-item" data-item-id="BC67322" draggable="true">
+        <div class="product-info">
+          <img class="product-image" alt="Blueberry Muffin" src="public cart/muffin-chocolate-chip-isolated-1.png" />
+          <div class="product-name">Blueberry Muffin</div>
+          <div class="product-code">#BC67322</div>
+        </div>
+        <div class="price">PHP 55</div>
+        <div class="quantity">
+          <button class="quantity-btn quantity-decrease">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+          <span class="quantity-number">5</span>
+          <button class="quantity-btn quantity-increase">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="total">PHP 275</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="remove-zone" class="remove-zone">
+    DRAG HERE TO REMOVE
+  </div>
+
+   
+    <div class="cart-summary">
+      <div class="summary-content">
+        <div class="separator"></div>
+        <div class="summary-title">CART TOTAL</div>
+        <div class="summary-subtitle">Shipping and taxes are calculated at checkout</div>
+        <div class="summary-total">PHP 450</div>
+        <button class="checkout-btn">
+          <span>CHECKOUT</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </button>
+        <img class="shopping-bag" alt="Shopping bag" src="public cart/group-6.png" />
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="simple-cart-manager.js"></script>
+<script src="comprehensive-cart-manager.js"></script>
+</body>
+</html>

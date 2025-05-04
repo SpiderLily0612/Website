@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Golden Crust Bakery - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard-content">
+            <h1>Welcome to Golden Crust Bakery 🍞</h1>
+            <div id="userDetails">
+               
+            </div>
+            <button onclick="logout()" class="logout-button">Logout</button>
+        </div>
+    </div>
+
+    <script>
+        
+        const user = JSON.parse(localStorage.getItem("goldencrustUser"));
+        const userDetailsDiv = document.getElementById("userDetails");
+
+        if (user) {
+            userDetailsDiv.innerHTML = `
+                <p><strong>Full Name:</strong> ${user.fullName}</p>
+                <p><strong>Email Address:</strong> ${user.email}</p>
+            `;
+        } else {
+            userDetailsDiv.innerHTML = "<p>No user data found. Please log in again.</p>";
+        }
+
+        function logout() {
+            localStorage.removeItem("isLoggedIn");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
